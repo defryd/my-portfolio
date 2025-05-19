@@ -2,12 +2,13 @@
 import { Typewriter } from 'react-simple-typewriter';
 //components
 import InfoSection from './presentation/components/InfoSection';
+import { FormSection } from './presentation/components/FormSection';
 //data
 import data from './data/data.js';
 
 function App() {
 
-  const { projects, techStack, experience, education, certifications, Ids } = data;
+  const { techStack, experience, projects, education, certifications, Ids } = data;
 
   return (
     <>
@@ -72,6 +73,7 @@ function App() {
             extra: exp.duration
           })}
         />
+
         <InfoSection
           id="projects"
           title="Projects"
@@ -108,20 +110,7 @@ function App() {
           })}
         />
 
-        <section id='contact' className='pt-6'>
-          <h2 className='text-3xl font-semibold mb-6 text-center'>Contact Me</h2>
-          <p className='text-lg text-gray-300 text-center mb-4'>Feel free to reach out to me on my social media:</p>
-          <div className='flex justify-center space-x-4'>
-            <a href="" className='text-blue-400 hover:underline'>LinkedIn</a>
-            <a href="" className='text-blue-400 hover:underline'>GitHub</a>
-          </div>
-          {/* <form className='mt-6 max-w-md mx-auto'>
-          <input type="text" placeholder="Your Name" className='w-full p-2 mb-4 bg-gray-800 rounded-lg' />
-          <input type="email" placeholder="Your Email" className='w-full p-2 mb-4 bg-gray-800 rounded-lg' />
-          <textarea placeholder="Your Message" className='w-full p-2 mb-4 bg-gray-800 rounded-lg' rows="4"></textarea>
-          <button type="submit" className='bg-matrix-green text-black py-2 px-4 rounded-lg hover:bg-matrix-other transition duration-300'>Send Message</button>
-        </form> */}
-        </section>
+        <FormSection/>
 
         <footer className='text-center py-8 bg-gradient-to-b from-black to-matrix-darkgreen rounded-xl shadow-xl'>
           <p className='text-gray-400'>© 2025 Freddy. All rights reserved.</p>

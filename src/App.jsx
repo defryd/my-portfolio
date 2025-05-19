@@ -12,18 +12,24 @@ function App() {
 
   return (
     <>
-      <nav className='bg-black fixed top-0 left-0 w-full flex justify-end items-center px-8 shadow-lg z-50'>
-        <ul className='flex space-x-4'>
-          {
-            Ids.map((id) => (
-              <li key={id}>
-                <a href={`#${id}`} className='text-matrix-green hover:text-matrix-other'>{id.charAt(0).toUpperCase() + id.slice(1)}</a>
-              </li>)
-            )}
+      <nav
+        className="bg-black fixed top-0 left-0 w-full flex justify-end items-center px-8 py-4 shadow-lg z-50"
+        role="navigation"
+        aria-label="Main Navigation"
+      >
+        <ul className="flex space-x-6">
+          {Ids.map((id) => (
+            <li key={id}>
+              <a href={`#${id}`} className="text-matrix-green capitalize transition-colors duration-300 hover:text-matrix-other">
+                {id}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
 
       <div className='min-h-screen bg-black text-matrix-green p-8 space-y-10 '>
+
         <header className='text-center py-20 bg-gradient-to-b from-matrix-darkgreen to-black rounded-xl shadow-xl'>
           <h1 className='text-6xl font-extrabold mb-6 pb-2 bg-gradient-to-r from-matrix-green via-matrix-neon to-matrix-other text-transparent bg-clip-text'>
             <Typewriter words={["Hi, I'm Freddy Chia",
@@ -42,7 +48,7 @@ function App() {
           </p>
         </header>
 
-        <section id='about' className='pt-6'>
+        <section  id='about' className='scroll-mt-8 pt-6'>
           <h2 className='text-3xl font-semibold mb-4 text-center'>About Me</h2>
           <div className='flex flex-col md:flex-8 items-center gap-2 px-4'>
             <img src="../src/assets/MyPhoto.jpeg" alt="My Photo" className='w-60 h-60 rounded-full object-cover border-4 border-gray-700 shadow-lg' />
@@ -52,8 +58,8 @@ function App() {
           </div>
         </section>
 
-        <section id='skills' className='pt-6'>
-          <h2 className='text-2xl font-semibold mb-4 text-center'>Skills</h2>
+        <section id='skills' className='scroll-mt-8 pt-6'>
+          <h2 className='text-3xl font-semibold mb-4 text-center'>Skills</h2>
           <div className='flex flex-wrap gap-1 justify-center'>
             {
               techStack.items.map((tech, index) => (
@@ -81,7 +87,7 @@ function App() {
           getProps={(project) => ({
             title: project.title,
             image: project.img,
-            tech: project.tech,
+            extra: project.tech,
             link: project.link
           })}
         />
@@ -110,7 +116,7 @@ function App() {
           })}
         />
 
-        <FormSection/>
+        <FormSection />
 
         <footer className='text-center py-8 bg-gradient-to-b from-black to-matrix-darkgreen rounded-xl shadow-xl'>
           <p className='text-gray-400'>© 2025 Freddy. All rights reserved.</p>

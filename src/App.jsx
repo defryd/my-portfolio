@@ -62,7 +62,7 @@ function App() {
           <h2 className='text-3xl font-semibold mb-4 text-center'>Skills</h2>
           <div className='flex flex-wrap gap-1 justify-center'>
             {
-              techStack.items.map((tech, index) => (
+              techStack.map((tech, index) => (
                 <img className='h-7 m-1' key={index} src={tech.url} alt={tech.name} />
               ))
             }

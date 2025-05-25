@@ -1,6 +1,6 @@
 
 const InfoCard = ({ title, subtitle, extra, description, link, image }) => {
-    
+
     return (
         <div className='bg-gray-800 p-3 rounded-md shadow-sm text-sm hover:shadow-md transition duration-300'>
             {title && <h3 className='text-lg font-semibold mb-1'>{title}</h3>}

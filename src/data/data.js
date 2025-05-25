@@ -8,9 +8,7 @@ const projects = [
     { title: "Project 4", tech: "Description of project 4", link: "#" },
 ];
 
-const techStack = {
-    title: "Tecnologías",
-    items: [
+const techStack = [
         { name: "React", url: "https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" },
         { name: "React Native", url: "https://img.shields.io/badge/-React Native-319ff0?style=flat-square&logo=react&logoColor=white" },
         { name: "Redux", url: "https://img.shields.io/badge/-Redux-764ABC?style=flat-square&logo=redux&logoColor=white" },
@@ -32,8 +30,7 @@ const techStack = {
         { name: "MongoDB", url: "https://img.shields.io/badge/-MongoDB-13aa52?style=flat-square&logo=mongodb&logoColor=white" },
         { name: "SQLite", url: "https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" },
         { name: "MySQL", url: "https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" },
-    ]
-}
+    ];
 
 const experience = [
     { company: "WIEDII SAS", role: "Analista de desarrollo", duration: "feb. 2024 - actualidad · 1 año 4 meses" },

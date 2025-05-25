@@ -1,6 +1,7 @@
 import InfoCard from './InfoCard';
 
 const InfoSection = ({ id, title, items, getProps }) => {
+    
     return (
         <section id={id} className='scroll-mt-8 pt-6'>
             <h2 className='text-3xl font-semibold mb-4 text-center'>{title}</h2>

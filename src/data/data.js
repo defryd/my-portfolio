@@ -3,9 +3,9 @@ const Ids = [ 'about', 'skills','experience', 'projects', 'education', 'certific
 
 const projects = [
     { title: "Project 1", tech: "Description of project 1", link: "https://github.com/defryd/catsApp.git", img: "/src/assets/cats.png" },
-    { title: "Project 2", tech: "Description of project 2", link: "#" },
-    { title: "Project 3", tech: "Description of project 3", link: "#" },
-    { title: "Project 4", tech: "Description of project 4", link: "#" },
+    // { title: "Project 2", tech: "Description of project 2", link: "#" },
+    // { title: "Project 3", tech: "Description of project 3", link: "#" },
+    // { title: "Project 4", tech: "Description of project 4", link: "#" },
 ];
 
 const techStack = [
@@ -39,16 +39,17 @@ const experience = [
 ];
 
 const education = [
-    { institution: "Universidad Francisco de Paula Santander", degree: "Grado en Ingeniería", duration: "ene. 2016 - dic. 2023" },
-    { institution: "Institution 2", degree: "Degree 2", duration: "Duration 2" },
-    { institution: "Institution 3", degree: "Degree 3", duration: "Duration 3" },
+    { institution: "Universidad Francisco de Paula Santander", degree: "Grado en Ingeniería de Sistemas", duration: "ene. 2016 - dic. 2023" },
+    { institution: "CISCO", degree: "Cisco Certified Network Associate", duration: "dic. 2023" },
+    { institution: "Colegio Nuesra Señora de Fatima", degree: "Bachiller Tecnico en ", duration: "dic. 2015" },
+    { institution: "SENA", degree: "Técnico en Mantenimiento de Equipos de Computo ", duration: "dic. 2015" },
 ];
 
 const certifications = [
     { name: "React Native CLI: Aplicaciones nativas para IOS y Android", institution: "DevTalles", date: "feb. 2025", url: "https://cursos.devtalles.com/certificates/ogrxcs26gv", aptitudes: "React Native · TypeScript" },
     { name: "Bootcamp Programación", institution: "Asoandes", date: "dic. 2024", url: "https://cursos.devtalles.com/certificates/ogrxcs26gv", aptitudes: "" },
     { name: "TypeScript: Tu completa guía y manual de mano.", institution: "DevTalles", date: "sept. 2024", url: "https://cursos.devtalles.com/certificates/egwo9zrmga", aptitudes: "" },
-    { name: "Introduction to JavaScript", institution: "Sololearn", date: "ene. 2024", url: "https://www.sololearn.com/certificates/CC-7VO07T8K", aptitudes: "" },
+    { name: "Introduction to JavaScript", institution: "SoloLearn", date: "ene. 2024", url: "https://www.sololearn.com/certificates/CC-7VO07T8K", aptitudes: "" },
     { name: "Universidad JavaScript - De Cero a Experto JavaScript!", institution: "Udemy", date: "ene. 2024", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-0d4161ee-b3e3-4ddb-9f7c-bdf3b94c62cf.pdf", aptitudes: "" },
     { name: "Curso de Google Hacking || Dorks Comandos para Hackear", institution: "Udemy", date: "dic. 2023", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-9eb69ff3-262a-4629-beb0-53de8da057f7.pdf", aptitudes: "" },
 
@@ -58,7 +59,7 @@ const certifications = [
     { name: "CCNA: Introduction to Networks", institution: "Cisco", date: "feb. 2023", url: "https://www.credly.com/badges/b1934a16-ca97-4969-971f-3066b6d71d0c/linked_in_profile", aptitudes: "" },
 
     { name: "Curso de Responsive Design: Maquetación Mobile First", institution: "Platzi", date: "sept. 2022", url: "https://platzi.com/p/Defryd/curso/2030-mobile-first/diploma/detalle/", aptitudes: "" },
-    { name: "Curso Gratuito Ethical Hacking | Red Team", institution: "HACKERMENTOR CIBERSEGURIDAD S.A.S.", date: "jun. 2022", url: "", aptitudes: "" },
+    { name: "Curso Gratuito Ethical Hacking | Red Team", institution: "HACKERMENTOR CIBERSEGURIDAD S.A.S.", date: "jun. 2022", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-9eb69ff3-262a-4629-beb0-53de8da057f7.pdf", aptitudes: "" },
     { name: "Curso de Inglés Básico A1: Tus Primeras Conversaciones", institution: "Platzi", date: "feb. 2022", url: "https://platzi.com/p/Defryd/curso/1945-ingles-principiantes/diploma/detalle/", aptitudes: "" },
     { name: "Curso Definitivo de HTML y CSS", institution: "Platzi", date: "ene. 2022", url: "https://platzi.com/p/Defryd/curso/2008-html-css/diploma/detalle/", aptitudes: "" },
     { name: "Curso Práctico de HTML y CSS", institution: "Platzi", date: "ene. 2022", url: "https://platzi.com/p/Defryd/curso/1758-html-practico/diploma/detalle/", aptitudes: "" },

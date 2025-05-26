@@ -2,7 +2,13 @@
 const Ids = [ 'about', 'skills','experience', 'projects', 'education', 'certifications', 'contact' ];
 
 const projects = [
-    { title: "Project 1", tech: "Description of project 1", link: "https://github.com/defryd/catsApp.git", img: "/src/assets/cats.png" },
+    {
+        id: "cats-app",
+        title: "Cats App",
+        tech: "Proyecto de React Native con Expo para visualizar razas de gatos aleatorios.",
+        link: "https://github.com/defryd/catsApp.git",
+        img: "/src/assets/cats.png"
+    },
     // { title: "Project 2", tech: "Description of project 2", link: "#" },
     // { title: "Project 3", tech: "Description of project 3", link: "#" },
     // { title: "Project 4", tech: "Description of project 4", link: "#" },

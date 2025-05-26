@@ -1,5 +1,8 @@
 
-const InfoCard = ({ title, subtitle, extra, description, link, image, sectionId }) => {
+import { useNavigate } from 'react-router-dom';
+
+const InfoCard = ({ title, subtitle, extra, description, link, image, sectionId, idProject }) => {
+    const navigate = useNavigate();
 
     if (sectionId === 'certifications') {
         return (
@@ -21,15 +24,16 @@ const InfoCard = ({ title, subtitle, extra, description, link, image, sectionId 
 
     if (sectionId === 'projects') {
         return (
-            <div className='bg-gray-800 p-4 rounded-md shadow-sm text-sm hover:shadow-md transition duration-300'>
-                <h3 className='text-lg font-semibold mb-1'>{title}</h3>
-                {image && <img src={image} alt={title} className='w-full h-32 object-cover rounded-md mb-2' />}
-                {extra && <p className='text-gray-300 mb-0.5'>{extra}</p>}
-                {link && (
-                    <a href={link} className='text-blue-400 hover:underline'>
-                        View Project
-                    </a>
-                )}
+            <div
+                role="button"
+                tabIndex={0}
+                onClick={() => navigate(`/projects/${idProject}`)}
+                onKeyDown={(e) => e.key === 'Enter' && navigate(`/projects/${idProject}`)}
+                className="bg-gray-800 p-4 rounded-md shadow-sm text-sm hover:shadow-md hover:scale-[1.01] transition duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-matrix-green"
+            >
+                <h3 className="text-lg font-semibold mb-1">{title}</h3>
+                {image && <img src={image} alt={title} className="w-full h-32 object-cover rounded-md mb-2" />}
+                {extra && <p className="text-gray-300 mb-0.5">{extra}</p>}
             </div>
         );
     }

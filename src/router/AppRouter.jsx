@@ -4,7 +4,7 @@ import ProjectPage from '../presentation/components/ProjectPage';
 
 const AppRoutes = () => {
     return (
-    <BrowserRouter>
+    <BrowserRouter basename="/my-portfolio">
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects/:id" element={<ProjectPage />} />

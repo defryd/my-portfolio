@@ -6,9 +6,10 @@ import { FormSection } from './presentation/components/FormSection.jsx';
 //data
 import data from './data/data.js';
 
+
 function App() {
 
-  const { techStack, experience, projects, education, certifications, Ids } = data;
+  const { techStack, experience, projects, education, certifications, Ids, MyPhoto } = data;
 
   return (
     <>
@@ -48,10 +49,10 @@ function App() {
           </p>
         </header>
 
-        <section  id='about' className='scroll-mt-8 pt-6'>
+        <section id='about' className='scroll-mt-8 pt-6'>
           <h2 className='text-3xl font-semibold mb-4 text-center'>About Me</h2>
           <div className='flex flex-col md:flex-8 items-center gap-2 px-4'>
-            <img src="../src/assets/MyPhoto.jpeg" alt="My Photo" className='w-60 h-60 rounded-full object-cover border-4 border-gray-700 shadow-lg' />
+            <img src={MyPhoto} alt="My Photo" className='w-60 h-60 rounded-full object-cover border-4 border-gray-700 shadow-lg' />
             <p className='text-lg text-gray-300 max-w-2xl text-center'>
               I am a Full Stack Developer with a passion for creating dynamic and responsive web applications. I have experience in both front-end and back-end development, and I love to learn new technologies and improve my skills.
             </p>

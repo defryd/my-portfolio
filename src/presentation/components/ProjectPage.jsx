@@ -6,10 +6,10 @@ const ProjectPage = () => {
     const { id } = useParams();
     const { projects } = data;
     const project = projects.find(p => p.id === id);
-    console.log(project)
-    // if (!project) {
-    //     return <p className="text-center text-white mt-10">Proyecto no encontrado.</p>;
-    // }
+
+    if (!project) {
+        return <p className="text-center text-white mt-10">Proyecto no encontrado.</p>;
+    }
 
     return (
         <div className="min-h-screen bg-black text-matrix-green p-5">
@@ -23,7 +23,7 @@ const ProjectPage = () => {
                         className="w-3xl  h-auto rounded-md max-h-[80vh] object-contain"
                     />
                 </div>
-            
+
                 <p className="mb-2">{project.tech}</p>
                 <a href={project.link} className='text-blue-400 hover:underline'>View Project in GitHub</a>
             </div>

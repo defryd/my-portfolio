@@ -1,3 +1,8 @@
+import catsImage from '../assets/cats.png';
+
+import Perfil from '../assets/MyPhoto.jpeg';
+
+const MyPhoto = Perfil;
 
 const Ids = [ 'about', 'skills','experience', 'projects', 'education', 'certifications', 'contact' ];
 
@@ -7,7 +12,7 @@ const projects = [
         title: "Cats App",
         tech: "Proyecto de React Native con Expo para visualizar razas de gatos aleatorios.",
         link: "https://github.com/defryd/catsApp.git",
-        img: "/src/assets/cats.png"
+        img: catsImage
     },
     // { title: "Project 2", tech: "Description of project 2", link: "#" },
     // { title: "Project 3", tech: "Description of project 3", link: "#" },
@@ -79,5 +84,6 @@ export default {
     techStack,
     experience,
     education,
-    certifications
+    certifications,
+    MyPhoto
 }

@@ -76,7 +76,8 @@ function App() {
           getProps={(exp) => ({
             title: exp.company,
             subtitle: exp.role,
-            extra: exp.duration
+            extra: exp.duration,
+            description: exp.description,
           })}
         />
 

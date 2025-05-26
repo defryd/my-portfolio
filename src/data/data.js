@@ -33,9 +33,9 @@ const techStack = [
     ];
 
 const experience = [
-    { company: "WIEDII SAS", role: "Analista de desarrollo", duration: "feb. 2024 - actualidad · 1 año 4 meses" },
-    { company: "Autónomo", role: "Freelance Programmer", duration: "feb. 2022 - ene. 2024 · 2 años" },
-    { company: "Alcaldía de Cúcuta · Contrato temporal", role: "Desarrollador de front-end", duration: "nov. 2021 - ene. 2022 · 3 meses" },
+    { company: "WIEDII SAS", role: "Analista de Desarrollo", duration: "feb. 2024 - actualidad · 1 año 4 meses", description: "Participación activa en el desarrollo de aplicaciones web y móviles, incluyendo la implementación de nuevas funcionalidades, soporte y mantenimiento de proyectos existentes. Trabajo en el frontend utilizando React y React Native, y en el backend con tecnologías como Node.js, Go y PHP." },
+    { company: "Autónomo", role: "Freelance Programmer", duration: "feb. 2022 - ene. 2024 · 2 años", description: "Mientras finalizaba la carrera de Ingeniería de Sistemas, trabajé como desarrollador freelance, colaborando en proyectos para clientes locales. Me enfoqué principalmente en el desarrollo frontend con React, realizando correcciones y desarrollando funcionalidades básicas en aplicaciones web." },
+    { company: "Alcaldía de Cúcuta · Contrato temporal", role: "Desarrollador de Frontend", duration: "nov. 2021 - ene. 2022 · 3 meses", description: "Participé en el desarrollo del módulo de gestión de procesos para atención al cliente dentro de una aplicación web, enfocándome en el frontend con HTML, CSS y JavaScript. También realicé la integración del módulo en una plataforma basada en WordPress, asegurando compatibilidad y diseño responsivo." },
 ];
 
 const education = [

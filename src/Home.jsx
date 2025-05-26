@@ -1,8 +1,8 @@
 //hooks
 import { Typewriter } from 'react-simple-typewriter';
 //components
-import InfoSection from './presentation/components/InfoSection';
-import { FormSection } from './presentation/components/FormSection';
+import InfoSection from './presentation/components/InfoSection.jsx';
+import { FormSection } from './presentation/components/FormSection.jsx';
 //data
 import data from './data/data.js';
 
@@ -86,6 +86,7 @@ function App() {
           title="Projects"
           items={projects}
           getProps={(project) => ({
+            idProject: project.id,
             title: project.title,
             image: project.img,
             extra: project.tech,

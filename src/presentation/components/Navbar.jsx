@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Navbar = ({ sections }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +9,6 @@ const Navbar = ({ sections }) => {
         <nav className="bg-black fixed top-0 left-0 w-full z-50 shadow-lg">
             <div className="flex justify-end items-center px-6 py-2 md:px-8">
 
-                {/* Botón Hamburguesa (visible solo en móviles) */}
                 <button
                     onClick={toggleMenu}
                     className="text-matrix-green text-3xl md:hidden"
@@ -18,7 +17,6 @@ const Navbar = ({ sections }) => {
                     <ion-icon name="menu-outline"></ion-icon>
                 </button>
 
-                {/* Menú horizontal en pantallas grandes */}
                 <ul className="hidden md:flex space-x-6">
                     {sections.map((id) => (
                         <li key={id}>
@@ -33,7 +31,6 @@ const Navbar = ({ sections }) => {
                 </ul>
             </div>
 
-            {/* Menú desplegable en móviles */}
             {isOpen && (
                 <ul className="flex flex-col md:hidden bg-black px-6 pb-4 space-y-4">
                     {sections.map((id) => (

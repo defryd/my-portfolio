@@ -8,12 +8,12 @@ import Navbar from './presentation/components/Navbar.jsx';
 import data from './data/data.js';
 
 
-function App() {
+function Home() {
 
   const { techStack, experience, projects, education, certifications, Ids, MyPhoto } = data;
 
   return (
-    <>
+    <main className='min-h-screen w-full bg-black text-matrix-green p-4  space-y-10 overflow-x-hidden'>
       <Navbar sections={Ids}/>
 
       <div className='min-h-screen bg-black text-matrix-green p-8 space-y-10 '>
@@ -113,8 +113,8 @@ function App() {
         </footer>
 
       </div>
-    </>
+    </main>
   )
 }
 
-export default App
+export default Home

@@ -3,6 +3,7 @@ import { Typewriter } from 'react-simple-typewriter';
 //components
 import InfoSection from './presentation/components/InfoSection.jsx';
 import { FormSection } from './presentation/components/FormSection.jsx';
+import Navbar from './presentation/components/Navbar.jsx';
 //data
 import data from './data/data.js';
 
@@ -13,21 +14,7 @@ function App() {
 
   return (
     <>
-      <nav
-        className="bg-black fixed top-0 left-0 w-full flex justify-end items-center px-8 py-4 shadow-lg z-50"
-        role="navigation"
-        aria-label="Main Navigation"
-      >
-        <ul className="flex space-x-6">
-          {Ids.map((id) => (
-            <li key={id}>
-              <a href={`#${id}`} className="text-matrix-green capitalize transition-colors duration-300 hover:text-matrix-other">
-                {id}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <Navbar sections={Ids}/>
 
       <div className='min-h-screen bg-black text-matrix-green p-8 space-y-10 '>
 

@@ -1,11 +1,11 @@
 //hooks
 import { Typewriter } from 'react-simple-typewriter';
 //components
-import InfoSection from './presentation/components/InfoSection.jsx';
-import { FormSection } from './presentation/components/FormSection.jsx';
-import Navbar from './presentation/components/Navbar.jsx';
+import InfoSection from '../../components/InfoSection.jsx';
+import { FormSection } from '../../components/FormSection.jsx';
+import Navbar from '../../components/Navbar.jsx';
 //data
-import data from './data/data.js';
+import data from '../../../data/data.js';
 
 
 function Home() {

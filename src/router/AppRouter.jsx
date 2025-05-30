@@ -1,6 +1,6 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Home from '../Home';
-import ProjectPage from '../presentation/components/ProjectPage';
+import ProjectPage from '../presentation/screens/project/ProjectPage';
+import Home from '../presentation/screens/home/Home';
 
 const AppRoutes = () => {
     return (

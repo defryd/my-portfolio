@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import data from './../../data/data.js';
+import data from '../../../data/data.js';
 
 
 const ProjectPage = () => {

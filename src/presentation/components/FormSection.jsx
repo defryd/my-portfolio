@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const FormSection = () => {
 
@@ -11,14 +11,29 @@ export const FormSection = () => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
+    useEffect(() => {
+        if (form.name === '' && form.email === '' && form.message === '') {
+            setIsHuman(false);
+        }
+        const second = setTimeout(() => {
+            setIsHuman(false);
+        }, 2000);
+
+        return () => {
+            clearTimeout(second);
+        }
+    }, [form.name, form.email, form.message]);
+
+
     const handleCaptchaChange = (e) => {
-        setIsHuman(e.target.checked);
+        if(form.name !== '' && form.email !== '' && form.message !== '') {
+            setIsHuman(e.target.checked);
+        }
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            console.log('form', form);
             const response = await fetch('https://formspree.io/f/mvgayozr', {
                 method: 'POST',
                 headers: {

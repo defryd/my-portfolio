@@ -9,4 +9,9 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
+  build: {
+    rollupOptions: {
+      input: 'index.html'
+    }
+  }
 })

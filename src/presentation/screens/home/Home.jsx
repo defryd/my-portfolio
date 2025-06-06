@@ -101,7 +101,6 @@ function Home() {
             title: cert.name,
             subtitle: cert.institution,
             extra: cert.date,
-            description: cert.aptitudes,
             link: cert.url
           })}
         />

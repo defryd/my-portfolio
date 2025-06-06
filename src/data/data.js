@@ -1,4 +1,9 @@
 import catsImage from '../assets/cats.png';
+import cat01 from '../assets/catsProject/cats-01.png';
+import cat02 from '../assets/catsProject/cats-02.png';
+import cat03 from '../assets/catsProject/cats-03.png';
+import cat04 from '../assets/catsProject/cats-04.png';
+import cat05 from '../assets/catsProject/cats-05.png';
 
 import Perfil from '../assets/MyPhoto.jpeg';
 
@@ -10,9 +15,11 @@ const projects = [
     {
         id: "cats-app",
         title: "Cats App",
-        tech: "Proyecto de React Native con Expo para visualizar razas de gatos aleatorios.",
+        tech: "Proyecto de React Native con CLI para visualizar razas de gatos aleatorios.",
+        description: "Desarrollado con React Native CLI, este proyecto permite a los usuarios explorar diferentes razas de gatos, mostrando imágenes y descripciones aleatorias. Utiliza la API de TheCatAPI para obtener datos sobre las razas y sus imágenes.",
         link: "https://github.com/defryd/catsApp.git",
-        img: catsImage
+        img: catsImage,
+        imgs:[cat01, cat02, cat03, cat04, cat05],
     },
     // { title: "Project 2", tech: "Description of project 2", link: "#" },
     // { title: "Project 3", tech: "Description of project 3", link: "#" },
@@ -44,38 +51,38 @@ const techStack = [
     ];
 
 const experience = [
-    { company: "WIEDII SAS", role: "Analista de Desarrollo", duration: "feb. 2024 - actualidad · 1 año 4 meses", description: "Participación activa en el desarrollo de aplicaciones web y móviles, incluyendo la implementación de nuevas funcionalidades, soporte y mantenimiento de proyectos existentes. Trabajo en el frontend utilizando React y React Native, y en el backend con tecnologías como Node.js, Go y PHP." },
+    { company: "WIEDII SAS", role: "Analista de Desarrollo", duration: "feb. 2024 - actualidad · 1 año 5 meses", description: "Participación activa en el desarrollo de aplicaciones web y móviles, incluyendo la implementación de nuevas funcionalidades, soporte y mantenimiento de proyectos existentes. Trabajo en el frontend utilizando React y React Native, y en el backend con tecnologías como Node.js, Go y PHP." },
     { company: "Autónomo", role: "Freelance Programmer", duration: "feb. 2022 - ene. 2024 · 2 años", description: "Mientras finalizaba la carrera de Ingeniería de Sistemas, trabajé como desarrollador freelance, colaborando en proyectos para clientes locales. Me enfoqué principalmente en el desarrollo frontend con React, realizando correcciones y desarrollando funcionalidades básicas en aplicaciones web." },
     { company: "Alcaldía de Cúcuta · Contrato temporal", role: "Desarrollador de Frontend", duration: "nov. 2021 - ene. 2022 · 3 meses", description: "Participé en el desarrollo del módulo de gestión de procesos para atención al cliente dentro de una aplicación web, enfocándome en el frontend con HTML, CSS y JavaScript. También realicé la integración del módulo en una plataforma basada en WordPress, asegurando compatibilidad y diseño responsivo." },
 ];
 
 const education = [
-    { institution: "Universidad Francisco de Paula Santander", degree: "Grado en Ingeniería de Sistemas", duration: "ene. 2016 - dic. 2023" },
+    { institution: "Universidad Francisco de Paula Santander", degree: "Grado en Ingeniería de Sistemas", duration: "dic. 2023" },
     { institution: "CISCO", degree: "Cisco Certified Network Associate", duration: "dic. 2023" },
     { institution: "Colegio Nuesra Señora de Fatima", degree: "Bachiller Tecnico en ", duration: "dic. 2015" },
     { institution: "SENA", degree: "Técnico en Mantenimiento de Equipos de Computo ", duration: "dic. 2015" },
 ];
 
 const certifications = [
-    { name: "React Native CLI: Aplicaciones nativas para IOS y Android", institution: "DevTalles", date: "feb. 2025", url: "https://cursos.devtalles.com/certificates/ogrxcs26gv", aptitudes: "React Native · TypeScript" },
-    { name: "Bootcamp Programación", institution: "Asoandes", date: "dic. 2024", url: "https://cursos.devtalles.com/certificates/ogrxcs26gv", aptitudes: "" },
-    { name: "TypeScript: Tu completa guía y manual de mano.", institution: "DevTalles", date: "sept. 2024", url: "https://cursos.devtalles.com/certificates/egwo9zrmga", aptitudes: "" },
-    { name: "Introduction to JavaScript", institution: "SoloLearn", date: "ene. 2024", url: "https://www.sololearn.com/certificates/CC-7VO07T8K", aptitudes: "" },
-    { name: "Universidad JavaScript - De Cero a Experto JavaScript!", institution: "Udemy", date: "ene. 2024", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-0d4161ee-b3e3-4ddb-9f7c-bdf3b94c62cf.pdf", aptitudes: "" },
-    { name: "Curso de Google Hacking || Dorks Comandos para Hackear", institution: "Udemy", date: "dic. 2023", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-9eb69ff3-262a-4629-beb0-53de8da057f7.pdf", aptitudes: "" },
+    { name: "React Native CLI: Aplicaciones nativas para IOS y Android", institution: "DevTalles", date: "feb. 2025", url: "https://cursos.devtalles.com/certificates/ogrxcs26gv"},
+    { name: "Bootcamp Programación", institution: "Asoandes", date: "dic. 2024", url: "https://cursos.devtalles.com/certificates/ogrxcs26gv" },
+    { name: "TypeScript: Tu completa guía y manual de mano.", institution: "DevTalles", date: "sept. 2024", url: "https://cursos.devtalles.com/certificates/egwo9zrmga"},
+    { name: "Introduction to JavaScript", institution: "SoloLearn", date: "ene. 2024", url: "https://www.sololearn.com/certificates/CC-7VO07T8K" },
+    { name: "Universidad JavaScript - De Cero a Experto JavaScript!", institution: "Udemy", date: "ene. 2024", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-0d4161ee-b3e3-4ddb-9f7c-bdf3b94c62cf.pdf" },
+    { name: "Curso de Google Hacking || Dorks Comandos para Hackear", institution: "Udemy", date: "dic. 2023", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-9eb69ff3-262a-4629-beb0-53de8da057f7.pdf" },
 
-    { name: "CCNA", institution: "Cisco", date: "Expedición sept. 2023 · Vencimiento: sept. 2026", url: "https://www.credly.com/badges/1f8a1f7c-6998-4adc-82bc-00a3def64b25/linked_in_profile", aptitudes: "" },
-    { name: "CCNA: Enterprise Networking, Security, and Automation", institution: "Cisco", date: "ago. 2023", url: "https://www.credly.com/badges/490be8d3-7288-41c4-8999-9aed41c2ab13/linked_in_profile", aptitudes: "" },
-    { name: "CCNA: Switching, Routing, and Wireless Essentials", institution: "Cisco", date: "jun. 2023", url: "https://www.credly.com/badges/57cc174c-83eb-478a-a6a3-f90b479b1b80/linked_in_profile", aptitudes: "" },
-    { name: "CCNA: Introduction to Networks", institution: "Cisco", date: "feb. 2023", url: "https://www.credly.com/badges/b1934a16-ca97-4969-971f-3066b6d71d0c/linked_in_profile", aptitudes: "" },
+    { name: "CCNA", institution: "Cisco", date: "Expedición sept. 2023 · Vencimiento: sept. 2026", url: "https://www.credly.com/badges/1f8a1f7c-6998-4adc-82bc-00a3def64b25/linked_in_profile" },
+    { name: "CCNA: Enterprise Networking, Security, and Automation", institution: "Cisco", date: "ago. 2023", url: "https://www.credly.com/badges/490be8d3-7288-41c4-8999-9aed41c2ab13/linked_in_profile" },
+    { name: "CCNA: Switching, Routing, and Wireless Essentials", institution: "Cisco", date: "jun. 2023", url: "https://www.credly.com/badges/57cc174c-83eb-478a-a6a3-f90b479b1b80/linked_in_profile" },
+    { name: "CCNA: Introduction to Networks", institution: "Cisco", date: "feb. 2023", url: "https://www.credly.com/badges/b1934a16-ca97-4969-971f-3066b6d71d0c/linked_in_profile" },
 
-    { name: "Curso de Responsive Design: Maquetación Mobile First", institution: "Platzi", date: "sept. 2022", url: "https://platzi.com/p/Defryd/curso/2030-mobile-first/diploma/detalle/", aptitudes: "" },
-    { name: "Curso Gratuito Ethical Hacking | Red Team", institution: "HACKERMENTOR CIBERSEGURIDAD S.A.S.", date: "jun. 2022", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-9eb69ff3-262a-4629-beb0-53de8da057f7.pdf", aptitudes: "" },
-    { name: "Curso de Inglés Básico A1: Tus Primeras Conversaciones", institution: "Platzi", date: "feb. 2022", url: "https://platzi.com/p/Defryd/curso/1945-ingles-principiantes/diploma/detalle/", aptitudes: "" },
-    { name: "Curso Definitivo de HTML y CSS", institution: "Platzi", date: "ene. 2022", url: "https://platzi.com/p/Defryd/curso/2008-html-css/diploma/detalle/", aptitudes: "" },
-    { name: "Curso Práctico de HTML y CSS", institution: "Platzi", date: "ene. 2022", url: "https://platzi.com/p/Defryd/curso/1758-html-practico/diploma/detalle/", aptitudes: "" },
-    { name: "Curso de Computación Básica", institution: "Platzi", date: "dic. 2021", url: "https://platzi.com/p/Defryd/curso/1741-computacion-basica-2019/diploma/detalle/", aptitudes: "" },
-    { name: "[Appsco] Curso profesional de Git y GitHub 2017", institution: "Platzi", date: "sept. 2020", url: "https://platzi.com/p/freddysebastianchiavera/curso/1194-git-appsco-2017/diploma/detalle/", aptitudes: "" },
+    { name: "Curso de Responsive Design: Maquetación Mobile First", institution: "Platzi", date: "sept. 2022", url: "https://platzi.com/p/Defryd/curso/2030-mobile-first/diploma/detalle/"  },
+    { name: "Curso Gratuito Ethical Hacking | Red Team", institution: "HACKERMENTOR CIBERSEGURIDAD S.A.S.", date: "jun. 2022", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-9eb69ff3-262a-4629-beb0-53de8da057f7.pdf" },
+    { name: "Curso de Inglés Básico A1: Tus Primeras Conversaciones", institution: "Platzi", date: "feb. 2022", url: "https://platzi.com/p/Defryd/curso/1945-ingles-principiantes/diploma/detalle/" },
+    { name: "Curso Definitivo de HTML y CSS", institution: "Platzi", date: "ene. 2022", url: "https://platzi.com/p/Defryd/curso/2008-html-css/diploma/detalle/" },
+    { name: "Curso Práctico de HTML y CSS", institution: "Platzi", date: "ene. 2022", url: "https://platzi.com/p/Defryd/curso/1758-html-practico/diploma/detalle/" },
+    { name: "Curso de Computación Básica", institution: "Platzi", date: "dic. 2021", url: "https://platzi.com/p/Defryd/curso/1741-computacion-basica-2019/diploma/detalle/" },
+    { name: "[Appsco] Curso profesional de Git y GitHub 2017", institution: "Platzi", date: "sept. 2020", url: "https://platzi.com/p/freddysebastianchiavera/curso/1194-git-appsco-2017/diploma/detalle/" },
 ];
 
 export default {

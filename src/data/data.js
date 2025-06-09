@@ -16,7 +16,7 @@ const projects = [
         id: "cats-app",
         title: "Cats App",
         tech: "Proyecto de React Native con CLI para visualizar razas de gatos aleatorios.",
-        description: "Desarrollado con React Native CLI, este proyecto permite a los usuarios explorar diferentes razas de gatos, mostrando imágenes y descripciones aleatorias. Utiliza la API de TheCatAPI para obtener datos sobre las razas y sus imágenes.",
+        description: "Desarrollado con React Native CLI, este proyecto permite a los usuarios explorar diferentes razas de gatos, mostrando su información correspondiente. Utiliza la API de TheCatAPI para obtener datos sobre las razas y sus imágenes.",
         link: "https://github.com/defryd/catsApp.git",
         img: catsImage,
         imgs:[cat01, cat02, cat03, cat04, cat05],
@@ -51,9 +51,9 @@ const techStack = [
     ];
 
 const experience = [
-    { company: "WIEDII SAS", role: "Analista de Desarrollo", duration: "feb. 2024 - actualidad · 1 año 5 meses", description: "Participación activa en el desarrollo de aplicaciones web y móviles, incluyendo la implementación de nuevas funcionalidades, soporte y mantenimiento de proyectos existentes. Trabajo en el frontend utilizando React y React Native, y en el backend con tecnologías como Node.js, Go y PHP." },
+    { company: "WIEDII US", role: "Full Stack Developer", duration: "feb. 2024 - actualidad · 1 año 5 meses", description: "Participación activa en el desarrollo de aplicaciones web y móviles, incluyendo la implementación de nuevas funcionalidades, soporte y mantenimiento de proyectos existentes. Trabajo en el frontend utilizando React y React Native, y en el backend con tecnologías como Node.js, Go y PHP." },
     { company: "Autónomo", role: "Freelance Programmer", duration: "feb. 2022 - ene. 2024 · 2 años", description: "Mientras finalizaba la carrera de Ingeniería de Sistemas, trabajé como desarrollador freelance, colaborando en proyectos para clientes locales. Me enfoqué principalmente en el desarrollo frontend con React, realizando correcciones y desarrollando funcionalidades básicas en aplicaciones web." },
-    { company: "Alcaldía de Cúcuta · Contrato temporal", role: "Desarrollador de Frontend", duration: "nov. 2021 - ene. 2022 · 3 meses", description: "Participé en el desarrollo del módulo de gestión de procesos para atención al cliente dentro de una aplicación web, enfocándome en el frontend con HTML, CSS y JavaScript. También realicé la integración del módulo en una plataforma basada en WordPress, asegurando compatibilidad y diseño responsivo." },
+    { company: "Alcaldía de Cúcuta · Contrato temporal", role: "Front-end Developer", duration: "nov. 2021 - ene. 2022 · 3 meses", description: "Participé en el desarrollo del módulo de gestión de procesos para atención al cliente dentro de una aplicación web, enfocándome en el frontend con HTML, CSS y JavaScript. También realicé la integración del módulo en una plataforma basada en WordPress, asegurando compatibilidad y diseño responsivo." },
 ];
 
 const education = [
@@ -71,7 +71,7 @@ const certifications = [
     { name: "Universidad JavaScript - De Cero a Experto JavaScript!", institution: "Udemy", date: "ene. 2024", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-0d4161ee-b3e3-4ddb-9f7c-bdf3b94c62cf.pdf" },
     { name: "Curso de Google Hacking || Dorks Comandos para Hackear", institution: "Udemy", date: "dic. 2023", url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-9eb69ff3-262a-4629-beb0-53de8da057f7.pdf" },
 
-    { name: "CCNA", institution: "Cisco", date: "Expedición sept. 2023 · Vencimiento: sept. 2026", url: "https://www.credly.com/badges/1f8a1f7c-6998-4adc-82bc-00a3def64b25/linked_in_profile" },
+    { name: "CCNA", institution: "Cisco", date: "Exp sept. 2023 · Ven: sept. 2026", url: "https://www.credly.com/badges/1f8a1f7c-6998-4adc-82bc-00a3def64b25/linked_in_profile" },
     { name: "CCNA: Enterprise Networking, Security, and Automation", institution: "Cisco", date: "ago. 2023", url: "https://www.credly.com/badges/490be8d3-7288-41c4-8999-9aed41c2ab13/linked_in_profile" },
     { name: "CCNA: Switching, Routing, and Wireless Essentials", institution: "Cisco", date: "jun. 2023", url: "https://www.credly.com/badges/57cc174c-83eb-478a-a6a3-f90b479b1b80/linked_in_profile" },
     { name: "CCNA: Introduction to Networks", institution: "Cisco", date: "feb. 2023", url: "https://www.credly.com/badges/b1934a16-ca97-4969-971f-3066b6d71d0c/linked_in_profile" },

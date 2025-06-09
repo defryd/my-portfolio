@@ -4,6 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import InfoSection from '../../components/InfoSection.jsx';
 import { FormSection } from '../../components/FormSection.jsx';
 import Navbar from '../../components/Navbar.jsx';
+import { Text } from '../../components/ui/Text.jsx';
 //data
 import data from '../../../data/data.js';
 
@@ -14,7 +15,7 @@ function Home() {
 
   return (
     <main className='min-h-screen w-full bg-black text-matrix-green p-4  space-y-10 overflow-x-hidden'>
-      <Navbar sections={Ids}/>
+      <Navbar sections={Ids} />
 
       <div className='min-h-screen bg-black text-matrix-green p-8 space-y-10 '>
 
@@ -31,18 +32,20 @@ function Home() {
             />
             <span className='border-r-4 border-matrix-other ml-1 animate-pulse'>&nbsp;</span>
           </h1>
-          <p className='text-xl text-gray-300 mx-auto'>
-            I am a passionate developer with a love for creating beautiful and functional applications.
-          </p>
+          <Text variant="p" color="secondary" align="center" className="text-xl mx-auto">
+            Soy un desarrollador comprometido en la creación de aplicaciones funcionales y visualmente atractivas.
+          </Text>
         </header>
 
         <section id='about' className='scroll-mt-8 pt-6'>
-          <h2 className='text-3xl font-semibold mb-4 text-center'>About Me</h2>
+          <Text as="h2" variant="h2" align="center" className='text-matrix-green mb-4'>
+            Sobre Me
+          </Text>
           <div className='flex flex-col md:flex-8 items-center gap-2 px-4'>
             <img src={MyPhoto} alt="My Photo" className='w-60 h-60 rounded-full object-cover border-4 border-gray-700 shadow-lg' />
-            <p className='text-lg text-gray-300 max-w-2xl text-center'>
-              I am a Full Stack Developer with a passion for creating dynamic and responsive web applications. I have experience in both front-end and back-end development, and I love to learn new technologies and improve my skills.
-            </p>
+            <Text variant="p" color="secondary" align="center" className="text-lg max-w-2xl">
+                Soy desarrollador Full Stack con una gran pasión por crear aplicaciones web dinámicas, atractivas y funcionales. Me gusta trabajar tanto en el Front-end como en el Back-end, y disfruto aprendiendo nuevas tecnologías que me permitan seguir mejorando día a día.
+            </Text>
           </div>
         </section>
 

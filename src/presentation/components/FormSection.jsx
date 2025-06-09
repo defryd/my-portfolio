@@ -61,7 +61,7 @@ export const FormSection = () => {
         <section id='contact' className='pt-6'>
             <h2 className='text-3xl font-semibold mb-6 text-center'>Contact Me</h2>
             <p className='text-lg text-gray-300 text-center mb-4'>
-                Feel free to reach out to me on my social media:
+                No dudes en ponerte en contacto conmigo en mis redes sociales:
             </p>
             <div className='flex justify-center space-x-4'>
                 <a href="https://www.linkedin.com/in/freddychiav" className='text-blue-400 hover:underline'>LinkedIn</a>

@@ -1,3 +1,4 @@
+
 import clsx from 'clsx';
 
 const variants = {
@@ -21,26 +22,25 @@ const colors = {
 };
 
 export const Text = ({
-    as = 'p',
+    as: Component = 'p',
     variant = 'p',
     align = 'left',
     color = 'secondary',
     className = '',
-    children 
+    children,
+    ...props
 }) => {
-    
-    const Tag = as;
-
     return (
-        <Tag
+        <Component
             className={clsx(
                 variants[variant],
                 alignments[align],
                 colors[color],
                 className
             )}
+            {...props}
         >
             {children}
-        </Tag>
+        </Component>
     );
 };

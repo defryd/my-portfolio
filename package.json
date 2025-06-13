@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://defryd.github.io/my-portfolio",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,6 +15,7 @@
   "dependencies": {
     "@formspree/react": "^3.0.0",
     "@tailwindcss/vite": "^4.1.6",
+    "clsx": "^2.1.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.1",

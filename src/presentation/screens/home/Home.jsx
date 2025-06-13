@@ -39,7 +39,7 @@ function Home() {
 
         <section id='about' className='scroll-mt-8 pt-6'>
           <Text as="h2" variant="h2" align="center" className='text-matrix-green mb-4'>
-            Sobre Me
+            About Me
           </Text>
           <div className='flex flex-col md:flex-8 items-center gap-2 px-4'>
             <img src={MyPhoto} alt="My Photo" className='w-60 h-60 rounded-full object-cover border-4 border-gray-700 shadow-lg' />

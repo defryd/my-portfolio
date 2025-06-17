@@ -1,5 +1,8 @@
 
+//libraries
 import { useState, useEffect } from 'react';
+//ui
+import { Text } from './ui/Text.jsx';
 
 export const FormSection = () => {
 
@@ -26,7 +29,7 @@ export const FormSection = () => {
 
 
     const handleCaptchaChange = (e) => {
-        if(form.name !== '' && form.email !== '' && form.message !== '') {
+        if (form.name !== '' && form.email !== '' && form.message !== '') {
             setIsHuman(e.target.checked);
         }
     };
@@ -59,10 +62,13 @@ export const FormSection = () => {
 
     return (
         <section id='contact' className='pt-6'>
-            <h2 className='text-3xl font-semibold mb-6 text-center'>Contact Me</h2>
-            <p className='text-lg text-gray-300 text-center mb-4'>
+            <Text variant='h2' align='center' className='font-semibold mb-6 text-matrix-green'>
+                Contact Me
+            </Text>
+            <Text variant='p' align='center' className='text-gray-300 mb-4'>
                 No dudes en ponerte en contacto conmigo en mis redes sociales:
-            </p>
+            </Text>
+
             <div className='flex justify-center space-x-4'>
                 <a href="https://www.linkedin.com/in/freddychiav" className='text-blue-400 hover:underline'>LinkedIn</a>
                 <a href="https://github.com/defryd" className='text-blue-400 hover:underline'>GitHub</a>
@@ -111,18 +117,22 @@ export const FormSection = () => {
                     type="submit"
                     className={`py-2 px-4 rounded-lg transition duration-300 
                     ${isHuman
-                    ? 'bg-matrix-green text-black hover:bg-matrix-other'
-                    : 'bg-gray-500 text-white cursor-not-allowed'}`}
+                            ? 'bg-matrix-green text-black hover:bg-matrix-other'
+                            : 'bg-gray-500 text-white cursor-not-allowed'}`}
                     disabled={!isHuman}
                 >
                     Send Message
                 </button>
 
                 {status === 'success' && (
-                    <p className="text-green-400 mt-2 text-center">Message sent successfully!</p>
+                    <Text variant='p' align='center' className='text-green-400 mt-2'>
+                        Message sent successfully!
+                    </Text>
                 )}
                 {status === 'error' && (
-                    <p className="text-red-400 mt-2 text-center">Something went wrong. Please try again.</p>
+                    <Text variant='p' align='center' className='text-red-400 mt-2'>
+                        Something went wrong. Please try again.
+                    </Text>
                 )}
             </form>
         </section>

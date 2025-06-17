@@ -22,7 +22,7 @@ const colors = {
 };
 
 export const Text = ({
-    as: Component = 'p',
+    as = 'p',
     variant = 'p',
     align = 'left',
     color = 'secondary',
@@ -30,6 +30,7 @@ export const Text = ({
     children,
     ...props
 }) => {
+    const Component = as;
     return (
         <Component
             className={clsx(

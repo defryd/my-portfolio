@@ -1,5 +1,8 @@
+//libraries
 import { useState } from 'react';
+//components
 import InfoCard from './InfoCard';
+import { Text } from './ui/Text.jsx';
 
 const InfoSection = ({ id, title, items, getProps }) => {
     const [showAll, setShowAll] = useState(false);
@@ -18,7 +21,9 @@ const InfoSection = ({ id, title, items, getProps }) => {
 
     return (
         <section id={id} className="scroll-mt-8 pt-6">
-            <h2 className="text-3xl font-semibold mb-4 text-center">{title}</h2>
+            <Text variant='h2' align='center' className='font-semibold mb-4 text-matrix-green'>
+                {title}
+            </Text>
 
             <div className={getGridClass()}>
                 {visibleItems.map((item, index) => (

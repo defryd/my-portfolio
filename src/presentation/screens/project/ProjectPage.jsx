@@ -1,6 +1,10 @@
+// libraries
 import { useParams } from 'react-router-dom';
-import data from '../../../data/data.js';
 import { useState } from 'react';
+//components
+import { Text } from '../../components/ui/Text.jsx';
+//data
+import data from '../../../data/data.js';
 
 const ProjectPage = () => {
     const { id } = useParams();
@@ -25,7 +29,9 @@ const ProjectPage = () => {
     return (
         <div className="min-h-screen bg-black text-matrix-green p-5">
             <div className="p-6 text-white max-w-4xl mx-auto">
-                <h1 className="text-matrix-green text-3xl font-bold mb-4">{project.title}</h1>
+                <Text variant='h2' className='font-bold mb-4 text-matrix-green'>
+                    {project.title}
+                </Text>
 
                 {/* Carrusel */}
                 <div className="bg-gray-800 relative w-full max-h-[70vh] flex justify-center items-center overflow-hidden rounded-md shadow-md mb-6">

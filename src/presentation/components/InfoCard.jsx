@@ -1,5 +1,7 @@
 
 import { useNavigate } from 'react-router-dom';
+//components
+import { Text } from './ui/Text.jsx';
 
 const InfoCard = ({ title, subtitle, extra, description, link, image, sectionId, idProject }) => {
     const navigate = useNavigate();
@@ -8,7 +10,9 @@ const InfoCard = ({ title, subtitle, extra, description, link, image, sectionId,
         case 'certifications':
             return (
                 <div className='bg-gray-800 p-4 rounded-md shadow-sm text-sm hover:shadow-md transition duration-300'>
-                    <h3 className='text-lg font-semibold mb-2 text-matrix-green'>{title}</h3>
+                    <Text variant='subtitle' className='mb-2 text-matrix-green'>
+                        {title}
+                    </Text>
                     <div className='flex flex-wrap justify-between gap-2'>
                         {subtitle && <p className='text-gray-400 font-semibold'>{subtitle}</p>}
                         {description && <p className='text-gray-300'>{description}</p>}
